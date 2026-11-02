@@ -95,18 +95,6 @@ Files inside the model folder:
 - preprocessor_plain.joblib - one hot encoding only, used for Decision Tree and Naive Bayes
 - results.csv - metrics of all 5 models on the test data
 
-To run the app on your own laptop, install the packages and then run streamlit. These are the two
-commands:
-
-pip install -r requirements.txt
-
-streamlit run app.py
-
-The app opens at http://localhost:8501. The test_data.csv of the repository is loaded by default. Any
-other csv can also be uploaded from the sidebar, but it must have the 17 input columns and the
-Revenue column.
-
-
 d. Models used
 
 All 5 models are trained on the same training data and tested on the same test data, so the
@@ -165,9 +153,3 @@ The app is deployed on Streamlit Community Cloud. It has the following:
 The app only loads the saved joblib files from the model folder. It does not train anything again on
 the uploaded data. The uploaded file must have the 17 input columns and the Revenue column.
 The test_data.csv of the repository is ready to upload directly.
-
-
-Note
-
-This work was done on the BITS Virtual Lab, and the screenshot of the execution is added in the
-submission PDF.
